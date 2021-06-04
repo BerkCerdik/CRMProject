@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30413.136
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CRM.Data", "CRM.Data\CRM.Data.csproj", "{77DB9969-C83F-4579-A427-93847A93EFC7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CRM.Services", "CRM.Services\CRM.Services.csproj", "{F1F1E851-8E0C-4A69-953E-B649719FA94D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CRM.UI", "CRM.UI\CRM.UI.csproj", "{4E997A3E-22C5-45EC-8242-70F92DBA2A76}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{77DB9969-C83F-4579-A427-93847A93EFC7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{77DB9969-C83F-4579-A427-93847A93EFC7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{77DB9969-C83F-4579-A427-93847A93EFC7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{77DB9969-C83F-4579-A427-93847A93EFC7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F1F1E851-8E0C-4A69-953E-B649719FA94D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F1F1E851-8E0C-4A69-953E-B649719FA94D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F1F1E851-8E0C-4A69-953E-B649719FA94D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F1F1E851-8E0C-4A69-953E-B649719FA94D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4E997A3E-22C5-45EC-8242-70F92DBA2A76}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4E997A3E-22C5-45EC-8242-70F92DBA2A76}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4E997A3E-22C5-45EC-8242-70F92DBA2A76}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4E997A3E-22C5-45EC-8242-70F92DBA2A76}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A1BB863E-C60B-4671-9C8A-952081B6DD33}
+	EndGlobalSection
+EndGlobal
