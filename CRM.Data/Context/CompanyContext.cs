@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace CRM.Data.Context
 {
-   public class CompanyContext : DbContext
+    public class CompanyContext : DbContext
     {
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
