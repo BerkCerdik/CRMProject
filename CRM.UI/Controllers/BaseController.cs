@@ -26,9 +26,12 @@ namespace CRM.UI.Controllers
                 if (HttpContext.User.Claims.ToArray()[2].Value != null)
                 {
 
-                    ViewBag["UserID"] = HttpContext.User.Claims.ToArray()[0].Value;
-                    ViewBag["UserName"] = HttpContext.User.Claims.ToArray()[1].Value;
-                    ViewBag["UserRole"] = HttpContext.User.Claims.ToArray()[2].Value;
+                    //ViewBag["UserID"] = HttpContext.User.Claims.ToArray()[0].Value;
+                    //ViewBag["UserName"] = HttpContext.User.Claims.ToArray()[1].Value;
+                    //ViewBag["UserRole"] = HttpContext.User.Claims.ToArray()[2].Value;
+                    ViewBag.UserID = HttpContext.User.Claims.ToArray()[0].Value;
+                    ViewBag.UserName = HttpContext.User.Claims.ToArray()[1].Value;
+                    ViewBag.UserRole = HttpContext.User.Claims.ToArray()[2].Value;
                     ViewBag.IsAuth = true;
 
                 }
