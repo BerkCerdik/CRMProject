@@ -1,0 +1,59 @@
+﻿@model CRM.Services.Dto.LoginDto
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>KYS Chairs | Log in </title>
+
+    <!-- Google Font: Source Sans Pro -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="..\..\plugins\fontawesome-free\css\all.min.css">
+    <!-- icheck bootstrap -->
+    <link rel="stylesheet" href="..\..\plugins\icheck-bootstrap\icheck-bootstrap.min.css">
+    <!-- Theme style -->
+    <link rel="stylesheet" href="..\..\dist\css\adminlte.min.css">
+</head>
+<body class="hold-transition login-page">
+    <div class="login-box">
+        <!-- /.login-logo -->
+        <div class="card card-outline card-primary">
+            <div class="card-header text-center">
+                <h1>KYS Chairs</h1>
+            </div>
+            <div class="card-body">
+
+                <form method="post" action="Login\Index">
+                    <h2 class="sr-only">Login Form</h2>
+                    <div class="illustration"><i class="icon ion-ios-locked-outline"></i></div>
+                    @Html.ValidationSummary()<br>
+                    <p style="color:red">@ViewBag.error</p><br>
+                    <div class="form-group">
+                        @Html.TextBoxFor(q => q.Username, new { @class = "form-control", @type = "text", @name = "username", @placeholder = "Kullanıcı Adı" })
+                    </div>
+                    <div class="form-group">
+                        @Html.PasswordFor(q => q.Password, new { @class = "form-control", @type = "password", @name = "password", @placeholder = "Şifre" })
+                    </div>
+                    <div class="form-group">
+                        <button class="btn btn-primary btn-block" type="submit">Giriş Yap</button>
+                    </div>
+                </form>
+
+
+
+            </div>
+            <!-- /.card-body -->
+        </div>
+        <!-- /.card -->
+    </div>
+    <!-- /.login-box -->
+    <!-- jQuery -->
+    <script src="..\..\plugins\jquery\jquery.min.js"></script>
+    <!-- Bootstrap 4 -->
+    <script src="..\..\plugins\bootstrap\js\bootstrap.bundle.min.js"></script>
+    <!-- AdminLTE App -->
+    <script src="..\..\dist\js\adminlte.min.js"></script>
+</body>
+</html>

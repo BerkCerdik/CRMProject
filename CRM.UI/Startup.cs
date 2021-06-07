@@ -37,6 +37,8 @@ namespace CRM.UI
             }
 
             app.UseRouting();
+            app.UseAuthorization();
+            app.UseAuthentication();
             app.UseStaticFiles();
 
             app.UseEndpoints(endpoints =>
