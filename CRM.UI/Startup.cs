@@ -26,6 +26,23 @@ namespace CRM.UI
         {
             services.AddMvc();
             services.AddDbContext<CompanyContext>();
+
+            services.AddAuthentication("UserScheme")
+                .AddCookie("UserScheme", options =>
+                {
+                    options.LoginPath = "/Login/Index/";
+                    options.Cookie.Name = "UsersCookie";
+                });
+
+            services.AddAuthorization(options =>
+            {
+                options.AddPolicy("UserAccess", policy =>
+                {
+                    policy.AuthenticationSchemes.Add("UserScheme");
+                    policy.RequireAuthenticatedUser();
+                });
+            });
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -40,6 +57,8 @@ namespace CRM.UI
             app.UseAuthorization();
             app.UseAuthentication();
             app.UseStaticFiles();
+
+
 
             app.UseEndpoints(endpoints =>
             {
